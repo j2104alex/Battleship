@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.title-container {
+    display: flex;
+    height: 20%;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.ship-image {
+    width: 100%;
+    height: auto;
+}
+
+.title-image {
+    background-color: aqua;
+    height: 100%;
+    width: 20%;
+}
+
+.ship-image.animate-duration-2s {
+    --animate-duration: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+.ship-image.animate__shakeX {
+    --animate-name: shakeX;
+    animation-name: shakeX;
+    animation-fill-mode: both;
+}
+
+.ship-image.animate__repeat-infinite {
+    --animate-repeat: infinite;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+.title {
+    height: 100%;
+    width: auto;
+    color: white;
+}
+
+.principal-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(25, 25, 25);
+}
