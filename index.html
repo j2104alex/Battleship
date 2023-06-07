@@ -12,174 +12,27 @@
 <body>
     <main class="principal-container">
         <header class="title-container">
-            <div class="title-image"><img class='ship-image' src="./sources/img/ship.png" alt="ship"></div>
+            <div class="title-image"><img class='ship-image animate-duration-2s' src="./sources/img/ship.png" alt="ship"></div>
             <div class="title">
                 <h1 class="name">Battleship</h1>
             </div>
-            <div class="title-image"><img class='ship-image' src="./sources/img/ship.png" alt="ship"></div>
+            <div class="title-image"><img class='ship-image animate-duration-2s' src="./sources/img/ship.png" alt="ship"></div>
         </header>
         <article class="board-container">
             <div class="lateral">
-                <h2>Estos son los barcos disponibles</h2>
+                <h2>Estos son los barcos a derribar</h2>
                 <ol id="ships-list">
                 </ol>
 
             </div>
             <div class="board">
-                <table class="battlefield">
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>A</th>
-                            <th>B</th>
-                            <th>C</th>
-                            <th>D</th>
-                            <th>E</th>
-                            <th>F</th>
-                            <th>G</th>
-                            <th>H</th>
-                            <th>I</th>
-                            <th>J</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>1</th>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                        </tr>
-                        <tr>
-                            <th>2</th>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                        </tr>
-                        <tr>
-                            <th>3</th>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                        </tr>
-                        <tr>
-                            <th>4</th>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                        </tr>
-                        <tr>
-                            <th>5</th>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                        </tr>
-                        <tr>
-                            <th>6</th>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                        </tr>
-                        <tr>
-                            <th>7</th>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                        </tr>
-                        <tr>
-                            <th>8</th>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                        </tr>
-                        <tr>
-                            <th>9</th>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                        </tr>
-                        <tr>
-                            <th>10</th>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                        </tr>
-                    </tbody>
+                <table class="battlefield" id="battlefield">
                 </table>
             </div>
             <div class="lateral">
-                <h2>Posiciones de los barcos</h2>
+                <h2>Posiciones a atacar</h2>
                 <p>La posición debe ser ingresada como 'A4', 'F3',etc.</p>
-                <label for="">Seleccione la posicion para el barco: </label><label class="shipLabel">Subamrino</label>
+                <label for="">Seleccione la posicion para realizar el disparo: </label>
                 <input type="text" id="position" name="position">
                 <button onclick="sendPosition()">Enviar posición</button>
             </div>
